@@ -25,8 +25,9 @@ jobs:
       - name: install
         run: |
           node -v
-          npm install
-          npm run build
+          npm install -g pnpm
+          pnpm install
+          pnpm run build
       # copy to server
       - name: Deploy
         uses: easingthemes/ssh-deploy@main
