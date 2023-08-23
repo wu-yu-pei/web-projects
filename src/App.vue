@@ -2,7 +2,14 @@
   <router-view></router-view>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core';
+const title = useTitle('05');
+const route = useRoute();
+console.log('----');
+
+console.log(route.fullPath);
+</script>
 <style>
 * {
   margin: 0;

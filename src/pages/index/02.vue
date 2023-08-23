@@ -25,7 +25,7 @@
 
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core';
-const title = useTitle('02');
+useTitle('02');
 const isDark = ref(false);
 
 function check(ev: any) {

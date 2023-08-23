@@ -30,7 +30,7 @@ import png4 from '../../assets/demo01/4.jpg';
 import png5 from '../../assets/demo01/5.png';
 import maskImg from '../../assets/demo01/mask4.jpg';
 
-const title = useTitle('01');
+useTitle('01');
 
 const zIndex = ref([5, 4, 3, 2, 1]);
 const images = ref([png1, png2, png3, png4, png5]);

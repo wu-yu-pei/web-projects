@@ -8,6 +8,9 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core';
+useTitle('04');
+</script>
 
 <style scoped></style>
