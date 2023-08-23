@@ -9,13 +9,13 @@ import 'uno.css';
 
 // router and layouts
 import generatedRoutes from '~pages';
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 import { setupLayouts } from 'virtual:generated-layouts';
 
 const routes = setupLayouts(generatedRoutes);
 const router = createRouter({
   routes,
-  history: createWebHistory(),
+  history: createWebHashHistory(),
 });
 
 createApp(App).use(store).use(router).mount('#app');
