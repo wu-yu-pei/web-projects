@@ -15,10 +15,12 @@ console.log(route.fullPath);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all linear .2s;
 }
 #app {
   width: 100vw;
   height: 100vh;
 }
+
 </style>
 <style scoped></style>

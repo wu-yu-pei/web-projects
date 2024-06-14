@@ -51,13 +51,13 @@ function check(ev: any) {
     ];
 
     const _clipPath = isDark.value ? [...clipPath].reverse() : clipPath;
-    console.log(isDark.value, _clipPath);
+
     document.documentElement.animate(
       {
         clipPath: _clipPath,
       },
       {
-        duration: 500,
+        duration: 5000,
         easing: 'ease-out',
         pseudoElement: isDark.value
           ? '::view-transition-old(a1)'

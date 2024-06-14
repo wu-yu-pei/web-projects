@@ -16,11 +16,13 @@ export default defineConfig({
   shortcuts: [
     ['t-c', 'w-full h-full'],
     ['full', 'w-100vw h-100vh'],
+    ['~flex', 'flex justify-center items-center'],
     ['f-c-c', 'flex justify-center items-center'],
     ['flex-col', 'flex flex-col'],
     ['text-ellipsis', 'truncate'],
     ['btn', 'h22 lh-20 px10 color-white border cursor-pointer'],
     ['border-1', 'border-black border-1px'],
+    ['raffle-block','w100 h100 flex items-center justify-center border-1 border-solid border-rounded-10 bg-red']
   ],
   rules: [
     [/^m-(\d+)$/, ([, d]) => ({ margin: `${d / 4}rem` })],
